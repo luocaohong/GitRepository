@@ -1,0 +1,4 @@
+com\java\pojo\Brand.class
+com\java\pojo\MybatisDemo.class
+com\java\mapper\UserMapper.class
+com\java\mapper\BrandMapper.class
