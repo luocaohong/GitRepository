@@ -11,8 +11,9 @@ public class Main {
         Hero tom = new Hero("Tom",1);
         Hero bob = new Hero("Bob", 2);
         bob.arms();
-        tom.battle(bob,BigAttack.B);
-        bob.battle(tom, BigAttack.A);
-
+        while (tom.getHP() != 0 && bob.getHP() != 0) {
+            tom.battle(bob,BigAttack.B);
+            bob.battle(tom, BigAttack.A);
+        }
     }
 }
