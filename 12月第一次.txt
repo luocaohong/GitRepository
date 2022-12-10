@@ -1,0 +1,57 @@
+drop table Student;
+create table Student(
+	id varchar(20) unique,
+	name varchar(32) unique,
+	birthday varchar(20),
+	gender char(1)
+);
+
+INSERT into Student VALUES('01','赵雷','1990-01-01','男');
+INSERT into Student VALUES('02','钱电','1990-12-21','男');
+INSERT into Student VALUES('03','孙风','1990-05-20','男');
+INSERT into Student VALUES('04','李云','1990-08-06','男');
+INSERT into Student VALUES('05','周梅','1991-12-01','女');
+INSERT into Student VALUES('06','吴兰','1992-03-01','女');
+INSERT into Student VALUES('07','郑竹','1989-07-01','女');
+INSERT into Student VALUES('08','王菊','1990-01-20','女');
+
+create table Course(
+	id varchar(20) UNIQUE,
+	c_name varchar(20),
+	teacher_id varchar(20)
+);
+INSERT into Course VALUES('01','语文','02');
+INSERT into Course VALUES('02','数学','01');
+INSERT into Course VALUES('03','英语','03');
+
+create table Teacher(
+	id varchar(20),
+	t_name varchar(20)
+);
+INSERT INTO Teacher values('01','张三');
+INSERT INTO Teacher values('02','李四');
+INSERT INTO Teacher values('03','王五');
+
+create table Score(
+	s_id varchar(20),
+	c_id varchar(20),
+	grade int
+);
+INSERT into Score VALUES('01','01','80');
+INSERT into Score VALUES('01','02','90');
+INSERT into Score VALUES('01','03','99');
+INSERT into Score VALUES('02','01','70');
+INSERT into Score VALUES('02','02','60');
+INSERT into Score VALUES('02','03','80');
+INSERT into Score VALUES('03','01','80');
+INSERT into Score VALUES('03','02','80');
+INSERT into Score VALUES('03','03','80');
+INSERT into Score VALUES('04','01','50');
+INSERT into Score VALUES('04','02','30');
+INSERT into Score VALUES('04','03','20');
+INSERT into Score VALUES('05','01','76');
+INSERT into Score VALUES('05','02','87');
+INSERT into Score VALUES('06','01','31');
+INSERT into Score VALUES('06','03','34');
+INSERT into Score VALUES('07','02','89');
+INSERT into Score VALUES('07','03','98');
